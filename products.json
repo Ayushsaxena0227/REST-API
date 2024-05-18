@@ -1,0 +1,46 @@
+[
+  {
+    "name": "iphone",
+    "price": 1000,
+    "feature": true,
+    "company": "apple"
+  },
+  {
+    "name": "watch",
+    "price": 699,
+    "feature":true,
+    "company": "apple"
+  },
+  {
+    "name": "watch10",
+    "price": 729,
+    "company": "apple"
+  },
+  {
+    "name": "Oppo Find X3",
+    "price": 899,
+    "company": "apple"
+    },
+  {
+    "name": "Huawei P40",
+    "price": 799,
+   
+    "company": "Huawei"
+  },
+  {
+    "name": "Nokia 8.3",
+    "price": 649,
+    "company": "Nokia"
+  },
+  {
+    "name": "Asus a11",
+    "price": 249,
+    "company": "asus"
+  },
+  {
+    "name": "Redmi Note 10",
+    "price": 199,
+    "feature": false,
+    "company": "mi"
+  }
+]

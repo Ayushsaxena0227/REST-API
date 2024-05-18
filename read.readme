@@ -1,0 +1,66 @@
+#vedio2
+->connecting backend wiht server using express, installed package.json and made file app.js in main folder only
+
+#vedio3
+->setting up routes and controllers using express
+first created a router and then set routes like ("/) ("/testing) and passed function in them
+then we defined those functions in controllers and exported them, then imported them in routers products.js
+then i used middleware ..i mean telling my app that now m using routes so wrote app.use(any route, route of products.js)
+
+#vedio4
+->used postman
+
+#vedio5
+->connecting backend with db
+
+#vedio6
+->secured data with dotenv = installed the package , created .env file and passed argument in app.js
+
+#vedio7
+->schema andd models = made a folder name models inside it created a file product.js and defined our schema
+
+#vedio8
+->store out data in json = created two files productDB.json(use for connecting to db)and products.json(it contain api data)
+here we require our model and connectdb file and inserted dataonec conenction is established. we required product.json file.
+.json file doesnt need to b exported u can require them simply
+and always require dotenv at topof file.
+
+#vedio9
+->reading data from db
+went to app.js saw middlewatre -> went to routes -> went to controllers product.js and instead of sending mssg in functions we are sending api data
+model is very imp in backend. u can perform crud operations by help of model
+here we require model file and inside function product.findone({})
+
+#vedio10
+->adding flteration and searching functionality using query props
+just pass request.query in argument and whatever you ll type in url / like company=apple so it ll come
+two arguments company=apple&name=apple   use & 
+
+#vedio11
+->add company filter and make ur api work better
+dobara data add na ho to we wrote product.deleteMany().
+if we are passing two argumetns like company=apple&featured=dfjsh ab man lo isme s featured vala jo h vo cheeej he nhi api me to i dont want ki empty data dikhae i want ki atleast jo true h jese ki is case m company apple to vo data to show ho atleast
+
+#vedio12
+->ab agr dono chahiye means company=apple&name=iphone...ab tak esa nhi kar paa rahe thr but now we ll handle this
+we also saw ki agr company=apple&name=iphone10 dala pr man lo iphone10 he he nahi data me to atleast iphone krke jo data h vo to show ho....to we implemented this also
+->so we increased our search functionality
+regex.
+
+#vedio13
+->sorting
+we can do it by sort method provided by mongoose
+just add.sort(name of field jiske according u want to sort)
+The request.query object contains query parameters sent in the URL of the HTTP request, such as /api/products?company=apple&name=iphone.
+
+#vedio14
+->select method in api
+jo document apke pas he usme s kitni fields ko dkhana he ya nahi dikhana he
+select(name) mtlb sirf name field ko dikhaega baki sb ko exclude kar dega
+
+#vedio15
+->pagination
+->we can do it by limit and skip method provided by mongoose
+->we can also do it by page and limit method provided by mongoose.
+1-10 data in one page , 11- 20 in next page and soon.. this is pagination..we create a formula for this
+apidata = apidat.skip(userskip).limit(userlimit) mtlb starting k 3 data skip karke next 3 data dikhao
